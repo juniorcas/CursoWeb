@@ -1,9 +1,18 @@
-<h1>Qual dia da semana é sua folga?</h1>
+<h1>O dia da sua folga é:</h1>
 
 <h2 id="dia"></h2>
 
 <script>
-    qualDia = prompt("Digite o dia de sua folga")
+    qualDia = prompt("Digite um número que represente o dia da semana para saber o dia da sua folga.")
 
-    if(qualDia==segunda){dia.innerHTML=}
+    if(qualDia==1){dia.innerHTML="Domingo"}
+    else if(qualDia==2){dia.innerHTML="Segunda-Feira"}
+    else if(qualDia==3){dia.innerHTML="Terca-Feira"}
+    else if(qualDia==4){dia.innerHTML="Quarta-Feira"}
+    else if(qualDia==5){dia.innerHTML="Quinta-Feira"}
+    else if(qualDia==6){dia.innerHTML="Sexta-Feira"}
+    else if(qualDia==7){dia.innerHTML="Sábado"}
+    else {
+        dia.innerHTML="Dia Inválido!"
+    }
 </script>
