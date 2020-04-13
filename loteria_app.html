@@ -1,0 +1,26 @@
+<p id="paragrafoResultado">
+    Clique no botão para participar do sortei de uma corrida de grátis
+</p>
+
+<button id ="botaoSortei" onclick ="executarSorteio()">
+    Corrida de Graca
+</button>
+
+
+<script>
+    function executarSortei() {
+        aleatorio = Math.round(Math.random()*10);
+        console.log(aleatorio);
+        chute = prompt("Seu número da sorte(1-10)");
+
+        while(chute > 10 || chute < 0);
+            chute = prompt("Número inválido, digite novamente (1-10)");
+            numeroCerto = chute == aleatorio
+    }
+
+    if(numeroCerto){
+        paragrafoResultado.innerHTML = "Você ganhou o sortei";
+    } else {
+        paragrafoResultado.innerHTML = "Tente novamentea"
+    }
+</script>
