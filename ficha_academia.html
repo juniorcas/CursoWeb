@@ -1,0 +1,29 @@
+<h1 id="tagh1"> Nome: </h1>
+
+<h2> Ficha </h2>
+
+<ul id="lista">
+
+</ul>
+
+<script>
+    nome = prompt("Nome Completo");
+    tagh1.innerHTML = "Nome: " + nome;
+    nascimento = prompt("Data de Nascimento");
+    temCondicao = confirm("Tem condicão pré-existente");
+    anoAtual = new Date().getFullYear();
+    anoDeNascimento = Number(nascimento.split("/")[2]);
+
+    idade = anoAtual - nascimento;
+
+    if(temCondicao){estadoDeSaude = "sim";}
+    // false == false (resultado: true)
+    if(temCondicao==false){estadoDeSaude = "Não";}
+
+    lista.innerHTML = `<li>Data de Nascimento: ${nascimento}</li>
+    <li>Idade: ${idade} anos</li>
+    <li>Tem condicão pré-existente: ${estadoDeSaude}</li>
+    <li>Precisa de acompanhameneto médico</li>`
+
+
+</script>
