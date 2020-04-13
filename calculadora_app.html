@@ -1,0 +1,22 @@
+<label for="inputDistancia"> Distância: </label>
+<input id="inputDistancia" type="text">
+
+<label for="inputTempo"> Tempo Min: </label>
+<input id="inputTempo" type="text">
+
+<button id="botaoCalcular" onclick="calcular()">
+    Calcular
+</button>
+
+<script>
+    function formataMoeda(numero) {
+        return numero.toFixed(2).replace(".",",");
+    }
+
+    function calcular() {
+        distanciaKm = inputDistancia.value;
+        tempoMin = inputTempo.value;
+        valorCorrida = 2 + distanciaKm * 1.4 + tempoMin * 0.26;
+        botaoCalcular.innerHTML = "Total: R$" + formataMoeda(valorCorrida);
+    }
+</script>
