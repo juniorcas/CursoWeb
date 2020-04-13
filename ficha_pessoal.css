@@ -1,0 +1,12 @@
+*{
+    font-family: monospace;
+    background-color: black;
+    background-color: #111111;
+    color: grey;
+    }
+  
+  img 
+  {
+    max-width: 200px;
+    max-height: 200px;
+  }
