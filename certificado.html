@@ -13,9 +13,11 @@
 
 <script src="https://caelum.github.io/quarentenadev/libCertificado.js" > </script>
 
-</html>
 
-<style>
+
+<head>
+    
+    <style>
     * {
   font-family: monospace;
   max-width: 100%;
@@ -175,10 +177,13 @@ html.paginaCertificado body {
       font-size: 3.5vw;
   }
 }
+    </style>
 
-</style>
+</head>
 
-<script>
+<body>
+    
+    <script>
     function gerar() {
         contador = 1000000;
         while(contador > 0) {
@@ -194,10 +199,20 @@ html.paginaCertificado body {
             "https://codepen.io/juniorcas/pen/yLYNOPz?editors=1010", 
             "https://codepen.io/juniorcas/pen/jObPxob?editors=0010"
         ]
+
+        contaLink = 0;
+        listaLinkComHTML = "";
+        while(contaLink < 6) {
+            
+            link = listaLink[contaLink];
+            listaLinkComHTML = `<li>${link}</li>` + listaLinkComHTML;
+            contaLink = contaLink + 1;
+    }
+
         document.body.innerHTML = 
         `${HTMLdocertificado} 
             <ol>
-                ${listaLink}     
+                ${listaLinkComHTML}     
             </ol>`
 
 
@@ -210,4 +225,10 @@ html.paginaCertificado body {
     // 4 https://codepen.io/juniorcas/pen/xxwGRVz?editors=0010 (Quantas Olipiadas até hoje?)
     // 5 https://codepen.io/juniorcas/pen/yLYNOPz?editors=1010 (Botão de Like)
     // 6 https://codepen.io/juniorcas/pen/jObPxob?editors=0010 (Calculadora de App)
-</script>
+    
+    
+    </script>
+
+</body>
+
+</html>
