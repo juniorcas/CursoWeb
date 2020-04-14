@@ -185,16 +185,29 @@ html.paginaCertificado body {
             contador = contador - 1;
             HTMLdocertificado = emitirCertificado(inputNome.value);
         }
-        document.body.innerHTML = `${HTMLdocertificado} 
-        <li>https://codepen.io/juniorcas/pen/yLYNVLg?editors=0010</li>
-        <li>https://codepen.io/juniorcas/pen/oNjXONB?editors=0010</li>
-        <li>https://codepen.io/juniorcas/pen/abvOMLe?editors=0010</li>`
+
+        listaLink = [
+            "https://codepen.io/juniorcas/pen/yLYNVLg?editors=0010", 
+            "https://codepen.io/juniorcas/pen/oNjXONB?editors=0010", 
+            "https://codepen.io/juniorcas/pen/abvOMLe?editors=0010", 
+            "https://codepen.io/juniorcas/pen/xxwGRVz?editors=0010", 
+            "https://codepen.io/juniorcas/pen/yLYNOPz?editors=1010", 
+            "https://codepen.io/juniorcas/pen/jObPxob?editors=0010"
+        ]
+        document.body.innerHTML = 
+        `${HTMLdocertificado} 
+            <ol>
+                ${listaLink}     
+            </ol>`
 
 
     }
 
 
-    //  (Quantas Copa do Mundo até hoje?)
-    // (Qual é o mês?)
-    //  (Quantos dias você já viveu?)
+    // 1 https://codepen.io/juniorcas/pen/yLYNVLg?editors=0010 (Quantas Copa do Mundo até hoje?)
+    // 2 https://codepen.io/juniorcas/pen/oNjXONB?editors=0010 (Qual é o mês?)
+    // 3 https://codepen.io/juniorcas/pen/abvOMLe?editors=0010 (Quantos dias você já viveu?)
+    // 4 https://codepen.io/juniorcas/pen/xxwGRVz?editors=0010 (Quantas Olipiadas até hoje?)
+    // 5 https://codepen.io/juniorcas/pen/yLYNOPz?editors=1010 (Botão de Like)
+    // 6 https://codepen.io/juniorcas/pen/jObPxob?editors=0010 (Calculadora de App)
 </script>
