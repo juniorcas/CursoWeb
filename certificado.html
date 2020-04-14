@@ -183,7 +183,18 @@ html.paginaCertificado body {
         contador = 1000000;
         while(contador > 0) {
             contador = contador - 1;
-            emitirCertificado()
+            HTMLdocertificado = emitirCertificado(inputNome.value);
         }
+        document.body.innerHTML = `${HTMLdocertificado} 
+        <li>https://codepen.io/juniorcas/pen/yLYNVLg?editors=0010</li>
+        <li>https://codepen.io/juniorcas/pen/oNjXONB?editors=0010</li>
+        <li>https://codepen.io/juniorcas/pen/abvOMLe?editors=0010</li>`
+
+
     }
+
+
+    //  (Quantas Copa do Mundo até hoje?)
+    // (Qual é o mês?)
+    //  (Quantos dias você já viveu?)
 </script>
